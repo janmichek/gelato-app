@@ -6,7 +6,7 @@ import {
 import Head from "next/head";
 import { useCallback, useEffect, useState } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
-import {Button} from 'huhu-ui'
+import { Button } from 'huhu-ui'
 
 export default function Home() {
   const account = useAccount();
