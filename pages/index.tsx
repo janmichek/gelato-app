@@ -6,6 +6,7 @@ import {
 import Head from "next/head";
 import { useCallback, useEffect, useState } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
+import {Button} from 'huhu-ui'
 
 export default function Home() {
   const account = useAccount();
@@ -62,9 +63,9 @@ export default function Home() {
           <div>
             {connectors.map((connector) => (
               <div key={connector.uid}>
-                <button onClick={() => connect({ connector })}>
+                <Button onClick={() => connect({ connector })}>
                   {connector.name}
-                </button>
+                </Button>
               </div>
             ))}
           </div>
@@ -85,14 +86,14 @@ export default function Home() {
 
         {account.status === "connected" && (
           <div>
-            <button onClick={() => disconnect()}>
+            <Button onClick={() => disconnect()}>
               Disconnect
-            </button>
+            </Button>
             <h2>3. Send transaction</h2>
 
-            <button onClick={sendTransactionCallback}>
+            <Button onClick={sendTransactionCallback}>
               {isPending ? 'Processing...' : 'Send Transaction'}
-            </button>
+            </Button>
 
             {taskId && !receipt && (
               <div>
