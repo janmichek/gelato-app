@@ -1,5 +1,5 @@
 {
-  "name": "untitled4",
+  "name": "gelato-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,14 +8,21 @@
     "start": "next start"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.3"
+    "@gelatonetwork/smartwallet": "^0.0.25",
+    "@gelatonetwork/smartwallet-react-wagmi": "^0.0.20",
+    "@tanstack/react-query": "~5.85.5",
+    "@wagmi/core": "~2.20.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "next": "15.5.3",
+    "viem": "~2.36.0",
+    "wagmi": "~2.16.8"
   },
   "devDependencies": {
     "typescript": "^5",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19"
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "buffer": "^6.0.3"
   }
 }
