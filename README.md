@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Gelato App
+
+This is a [Next.js](https://nextjs.org) gelato application bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+
+## Live Demo
+
+View the live application at: https://gelato-app-eight.vercel.app/
 
 ## Getting Started
 

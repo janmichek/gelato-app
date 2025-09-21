@@ -4,7 +4,7 @@ import type { AppProps } from "next/app";
 import { useState } from "react";
 import { WagmiProvider } from "wagmi";
 
-import { config } from "../lib/wagmi";
+import { config } from "../wagmi";
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
